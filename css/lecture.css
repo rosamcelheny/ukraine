@@ -1,0 +1,13 @@
+.grid-header {
+  grid-column: 1 / last;
+}
+.day {
+  grid-column: 1 / 2;
+}
+.lecture {
+  grid-area: 2 / 2 / last-line / last-line;
+}
+.video iframe {
+  width: 100%;
+  height: 500px;
+}

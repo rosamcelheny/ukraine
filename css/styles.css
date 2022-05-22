@@ -1,0 +1,88 @@
+.container {
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  border: 1px solid black;
+  text-align: center;
+  padding: 1em;
+  background-color: white;
+}
+
+button {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 2em repeat(5, 1fr);
+  height: 100%;
+  grid-gap: 0;
+}
+
+.background-image {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url("../images/smoke.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: -100;
+}
+.grid-header {
+  line-height: 2em;
+  text-align: center;
+  background-color: white;
+}
+.day {
+   border: 1px solid #000000;
+   text-align: center;
+   padding: 0.5em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   height: 100%;
+ }
+
+ .talk, .month {
+  height: 1em;
+  position: absolute;
+ }
+ .talk {
+  bottom: 0.5em;
+ }
+ .month {
+  top: 0.5em;
+ }
+
+ .selected {
+  background-color: black;
+  color: white;
+ }
+ .lecture {
+  background-color: white;
+ }
