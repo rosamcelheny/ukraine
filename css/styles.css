@@ -34,6 +34,11 @@ button {
   top: 1em;
 }
 
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -92,7 +97,7 @@ button {
   background-color: black;
   color: white;
  }
- .lecture {
+ .link {
   background-color: white;
  }
 
@@ -103,6 +108,16 @@ button {
 .feb {
   background-color: white;
 }
+
+a:hover .link {
+  background-color: black;
+  color: white;
+}
+
+a:active .link {
+  color: yellow;
+}
+
  @media screen and (min-width: 1200px){
   .grid-header {
     text-align: right;
