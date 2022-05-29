@@ -34,6 +34,18 @@ a {
 .link.selected {
   background-color: black;
 }
+
+header:hover {
+  background-color: black;
+  color: white;
+}
+header:hover * {
+  color: white;
+}
+header:active * {
+  color: yellow;
+}
+
 @media screen and (min-width: 1200px){
   .lecture {
     flex-direction: row-reverse;
