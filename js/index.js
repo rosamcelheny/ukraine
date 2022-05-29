@@ -1,3 +1,5 @@
+console.log("js running!");
+
 $("#about-button").click(function() {
   $("#about").toggle();
   console.log("clicked!");
