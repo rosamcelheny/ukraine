@@ -4,6 +4,10 @@
 a {
   grid-column: 1 / 2;
 }
+h2 {
+  font-size: 1em;
+  font-weight: normal;
+}
 .lecture {
   grid-area: 2 / 2 / last-line / last-line;
   display: flex;
@@ -16,6 +20,9 @@ a {
   height: 100%;
   padding: 1em;
   overflow-y: scroll;
+}
+.description div {
+  margin-bottom: 1em;
 }
 .video, 
 .video iframe {
