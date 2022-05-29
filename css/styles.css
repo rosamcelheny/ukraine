@@ -82,6 +82,7 @@ a, a:hover, a:active, a:visited {
   text-align: center;
   background-color: white;
   text-transform: uppercase;
+  border-bottom: 1px solid black;
 }
 .day {
    border: 1px solid #000000;
