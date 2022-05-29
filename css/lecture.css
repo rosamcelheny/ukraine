@@ -1,7 +1,7 @@
 .grid-header {
   grid-column: 1 / last;
 }
-.day {
+a {
   grid-column: 1 / 2;
 }
 .lecture {
@@ -26,6 +26,13 @@
   text-transform: uppercase;
   text-align: center;
   padding: 1em;
+}
+
+.link {
+  background-color: initial;
+}
+.link.selected {
+  background-color: black;
 }
 @media screen and (min-width: 1200px){
   .lecture {
