@@ -1,3 +1,8 @@
+@font-face {
+  font-family: akzidenz;
+  src: url(../fonts/AkzidenzGroteskProMedRegular.otf);
+}
+
 .container {
   height: 100vh;
     display: flex;
@@ -11,15 +16,16 @@ body, html {
 }
 
 * {
-  font-family: sans-serif;
+  font-family: akzidenz;
   box-sizing: border-box;
 }
 
 header {
   border: 1px solid black;
   text-align: center;
-  padding: 1em;
+  padding: 1.5em;
   background-color: white;
+  text-transform: uppercase;
 }
 
 button {
@@ -31,8 +37,9 @@ button {
 .calendar {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 2em repeat(5, 1fr);
+  grid-template-rows: auto repeat(5, 1fr);
   height: 100%;
+      overflow: hidden;
   grid-gap: 0;
 }
 
@@ -52,9 +59,10 @@ button {
   z-index: -100;
 }
 .grid-header {
-  line-height: 2em;
+  padding: 0.25em;
   text-align: center;
   background-color: white;
+  text-transform: uppercase;
 }
 .day {
    border: 1px solid #000000;
@@ -66,6 +74,7 @@ button {
    justify-content: center;
    position: relative;
    height: 100%;
+   text-transform: uppercase;
  }
 
  .talk, .month {
@@ -86,3 +95,35 @@ button {
  .lecture {
   background-color: white;
  }
+
+.desktop {
+  display: none;
+}
+ @media screen and (min-width: 1200px){
+  .grid-header {
+    text-align: right;
+  }
+
+  .day {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .month {
+    position: relative;
+    top: initial;
+  }
+  .talk {
+    text-align: left;
+    height: initial;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
