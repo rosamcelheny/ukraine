@@ -136,10 +136,12 @@ a:active .link {
 #about {
   display: none;
   /*display: block;*/
-    width: 75vw;
+    
     position: fixed;
     top: 25vh;
-    left: 12vw;
+  width:86vw;
+  left:7vw;
+  
     background-color: yellow;
     padding: 2em 2em 1em;
     border-radius: 0.5em;
@@ -184,5 +186,9 @@ position: absolute;
   .mobile {
     display: none;
   }
+   #about {
+     width: 600px;
+    left: calc(50vw - 300px);
+   }
 }
 
