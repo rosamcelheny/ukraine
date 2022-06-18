@@ -16,6 +16,7 @@ body, html {
 }
 
 * {
+  font-size: 13px;
   font-family: akzidenz;
   box-sizing: border-box;
 }
