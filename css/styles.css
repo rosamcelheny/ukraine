@@ -22,7 +22,7 @@ body, html {
 }
 
 header {
-  border: 4px solid black;
+  border: 3px solid black;
   text-align: center;
   padding: 1.5em;
   background-color: white;
@@ -38,7 +38,7 @@ button {
     width: 20px;
     border-radius: 50%;
     background-color: yellow;
-    border: 2px solid black;
+    border: 3px solid black;
     cursor: pointer;
 }
 
@@ -83,10 +83,10 @@ a, a:hover, a:active, a:visited {
   text-align: center;
   background-color: white;
   text-transform: uppercase;
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
 }
 .day {
-   border: 1px solid #000000;
+   border: 3px solid #000000;
    text-align: center;
    padding: 0.5em;
    display: flex;
@@ -131,7 +131,7 @@ a:hover .link {
 }
 
 a:active .link {
-  color: yellow;
+  color: white;
 }
 #about {
   display: none;
@@ -145,7 +145,7 @@ a:active .link {
     background-color: yellow;
     padding: 2em 2em 1em;
     border-radius: 0.5em;
-    border: 4px solid black;
+    border: 3px solid black;
 }
 .close-button {
 position: absolute;
@@ -155,7 +155,7 @@ position: absolute;
     cursor: pointer;
 }
 .close-button:hover {
-  color: white;
+  color: black;
 }
 #about div {
   margin-bottom: 1em;
