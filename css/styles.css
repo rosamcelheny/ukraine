@@ -33,9 +33,9 @@ button {
     position: absolute;
     right: 0em;
     top: 0em;
-    margin: 1.5em;
-    height: 1.5em;
-    width: 1.5em;
+    margin: 2.5em;
+    height: 2.5em;
+    width: 2.5em;
     border-radius: 0%;
     background-color: white;
     border: 3px solid black;
@@ -144,9 +144,9 @@ a:active .link {
   left:7vw;
   
     background-color: white;
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 10px
     padding: 2em 2em 1em;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 .close-button {
 position: absolute;
