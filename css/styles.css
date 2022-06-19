@@ -143,7 +143,8 @@ a:active .link {
   width:86vw;
   left:7vw;
   
-    background-color: #2197ff;
+    background-color: white;
+    box-shadow: 5px 10px 8px #888888;
     padding: 2em 2em 1em;
     border-radius: 0.5em;
     border: 3px solid black;
