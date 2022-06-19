@@ -59,8 +59,9 @@ a, a:hover, a:active, a:visited {
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: auto repeat(5, 1fr);
   height: 100%;
-      overflow: hidden;
+  overflow: hidden;
   grid-gap: 0;
+  border: 3px solid black;
 }
 
 .background-image {
