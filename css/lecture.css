@@ -16,7 +16,7 @@ h2 {
 }
 .description {
   background-color: white;
-  border: 1px solid black;
+  border: 3px solid black;
   height: 100%;
   padding: 1em;
   overflow-y: scroll;
