@@ -147,7 +147,7 @@ a:active .link {
     box-shadow: 5px 10px 8px #888888;
     padding: 2em 2em 1em;
     border-radius: 0.5em;
-    border: 3px solid black;
+    border: 1px solid black;
 }
 .close-button {
 position: absolute;
