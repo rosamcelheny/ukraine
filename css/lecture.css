@@ -1,5 +1,6 @@
 .grid-header {
   grid-column: 1 / last;
+      /*grid-column: 2 / last;*/
 }
 a {
   grid-column: 1 / 2;

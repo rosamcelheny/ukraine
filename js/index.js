@@ -11,4 +11,10 @@ $(".calendar").click(function() {
 
 $(".close-button").click(function() {
   $("#about").hide();
-})
+});
+
+window.onresize = function() {
+    document.body.height = window.innerHeight;
+    console.log(window.innerHeight);
+}
+window.onresize();
