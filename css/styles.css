@@ -1,48 +1,49 @@
 @font-face {
-  font-family: akzidenz;
-  src: url(../fonts/AkzidenzGroteskProMedRegular.otf);
+    font-family: akzidenz;
+    src: url(../fonts/AkzidenzGroteskProMedRegular.otf);
 }
 
 .container {
-  height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
+body,
+html {
+    margin: 0;
+    padding: 0;
 
 }
 
 body {
-  min-height: 100vh;
-  height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+    min-height: 100vh;
+    height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
 html {
-  height: -webkit-fill-available;
+    height: -webkit-fill-available;
 }
 
 * {
-  font-size: 13px;
-  font-family: akzidenz;
-  box-sizing: border-box;
+    font-size: 13px;
+    font-family: akzidenz;
+    box-sizing: border-box;
 }
 
 header {
-  border: 6px solid black;
-  
-      border-bottom-width: 3px;
-  text-align: center;
-  background-color: #fff421;
-  text-transform: uppercase;
+    border: 6px solid black;
+    border-bottom-width: 3px;
+    text-align: center;
+    background-color: #fff421;
+    text-transform: uppercase;
 }
+
 header div {
-  padding: 1.5em;
+    padding: 1.5em;
 }
 
 button {
@@ -58,162 +59,179 @@ button {
 }
 
 button:hover {
-  background-color: black;
-}
-button:active {
-  background-color: black;
+    background-color: black;
 }
 
-a, a:hover, a:active, a:visited {
-  text-decoration: none;
-  color: black;
+button:active {
+    background-color: black;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 .calendar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: auto repeat(5, 1fr);
-  height: 100%;
-  overflow: hidden;
-  grid-gap: 0;
-  border: 3px solid black;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto repeat(5, 1fr);
+    height: 100%;
+    overflow: hidden;
+    grid-gap: 0;
+    border: 3px solid black;
 }
 
 .background-image {
-  content: ' ';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  opacity: 0.8;
-  background-image: url("../images/black_compressed.gif");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-  z-index: -100;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+    background-image: url("../images/black_compressed.gif");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    z-index: -100;
 }
+
 .grid-header {
-  padding: 0.25em;
-  text-align: center;
-  background-color: white;
-  text-transform: uppercase;
-  border-bottom: 3px solid black;
+    padding: 0.25em;
+    text-align: center;
+    background-color: white;
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
 }
+
 .grid-header:first-of-type {
-  border-left: 3px solid black;
+    border-left: 3px solid black;
 }
+
 .grid-header:nth-of-type(7) {
-  border-right: 3px solid black;
+    border-right: 3px solid black;
 }
+
 .day {
-   border: 3px solid #000000;
-   text-align: center;
-   padding: 0.5em;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   position: relative;
-   height: 100%;
-   text-transform: uppercase;
- }
+    border: 3px solid #000000;
+    text-align: center;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    text-transform: uppercase;
+}
 
- .talk, .month {
-  height: 1em;
-  position: absolute;
- }
- .talk {
-  bottom: 0.5em;
- }
- .month {
-  top: 0.5em;
- }
+.talk,
+.month {
+    height: 1em;
+    position: absolute;
+}
 
- .selected {
-  background-color: black;
-  color: white;
- }
- .link {
-  background-color: white;
- }
+.talk {
+    bottom: 0.5em;
+}
+
+.month {
+    top: 0.5em;
+}
+
+.selected {
+    background-color: black;
+    color: white;
+}
+
+.link {
+    background-color: white;
+}
 
 .desktop {
-  display: none;
+    display: none;
 }
 
 .feb {
-  background-color: white;
+    background-color: white;
 }
 
 a:hover .link {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }
 
 a:active .link {
-  color: white;
+    color: white;
 }
+
 #about {
-  display: none;
-  /*display: block;*/
-    
+    display: none;
     position: fixed;
     top: 25vh;
-  width:86vw;
-  left:7vw;
-  
+    width: 86vw;
+    left: 7vw;
     background-color: white;
     box-shadow: 5px 10px;
     padding: 2em 2em 1em;
     border: 3px solid black;
 }
+
 .close-button {
-position: absolute;
+    position: absolute;
     right: 1em;
     top: 1em;
     transform: scaleX(1.25);
     cursor: pointer;
 }
+
 .close-button:hover {
-  color: black;
+    color: black;
 }
+
 #about div {
-  margin-bottom: 1em;
-}
-@media screen and (min-width: 1200px){
-  header {
-      border-bottom-width: 0px;
-  }
-  .grid-header {
-    text-align: right;
-  }
-
-  .day {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  .month {
-    position: relative;
-    top: initial;
-  }
-  .talk {
-    text-align: left;
-    height: initial;
-  }
-
-  .desktop {
-    display: block;
-  }
-
-  .mobile {
-    display: none;
-  }
-   #about {
-     width: 600px;
-    left: calc(50vw - 300px);
-   }
+    margin-bottom: 1em;
 }
 
+@media screen and (min-width: 1200px) {
+    header {
+        border-bottom-width: 0px;
+    }
+
+    .grid-header {
+        text-align: right;
+    }
+
+    .day {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .month {
+        position: relative;
+        top: initial;
+    }
+
+    .talk {
+        text-align: left;
+        height: initial;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    #about {
+        width: 600px;
+        left: calc(50vw - 300px);
+    }
+}
