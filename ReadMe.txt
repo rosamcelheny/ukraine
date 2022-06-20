@@ -1,6 +1,11 @@
 To fix:
-- can we transform the About button into a white square button that is flush to the grid of the site/ same position? 
-- can we fix the pop up page?
--gif background dissapeared ( i dont hate the site without what do you think)
+- redesign about button. see figma. 
+- on mobile, gif doesn't fill the screen. shoudl go to the bottom.
+- on mobile, remove "Talk". Should just show the number
+- on mobile, the calendar is too tall; shouldn't overflow the screen.
+- center the about button. should stay square.
+- do favicon
 - im actually ok with not putting a border in the Title part / day part but can we add padding? not sure where to move that 
 - favicon
+- on the lecture page, menu shoudl go all the way to the top. header should be flush with the text in the description.
+- whole header bar should link back to hp.
