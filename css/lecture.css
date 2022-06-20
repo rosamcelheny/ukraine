@@ -98,7 +98,7 @@ header:active * {
     .video,
     .description {
         width: 50%;
-        margin-top: calc(6em - 1px);
+        margin-top: calc(6em - 4px);
     }
 
     .lecture-header {
@@ -106,7 +106,6 @@ header:active * {
         top: 0px;
         left: -2px;
         right: -2px;
-        border-top-width: 3px;
     }
 
     .video iframe {
