@@ -10,10 +10,22 @@ h2 {
   font-weight: normal;
 }
 .lecture {
-  grid-area: 2 / 2 / last-line / last-line;
+  grid-area: 1 / 2 / last-line / last-line;
   display: flex;
   flex-direction: column;
   background-color: initial;
+}
+.lecture-header {
+  background-color: white;
+  border: 5px solid black;
+  text-align: center;
+  padding: 1.5em;
+}
+.lecture-nav {
+    grid-area: 1 / 1 / 7 / 2;
+}
+.lecture-nav .day {
+  height: 20%;
 }
 .description {
   background-color: white;
@@ -60,9 +72,17 @@ header:active * {
 @media screen and (min-width: 1200px){
   .lecture {
     flex-direction: row-reverse;
+    position: relative;
   }
   .video, .description {
     width: 50%;
+    margin-top: 5em;
+  }
+  .lecture-header {
+    position: absolute;
+    top: -5px;
+    left: -2px;
+    right: -2px;
   }
   .video iframe {
     height: 24vw;

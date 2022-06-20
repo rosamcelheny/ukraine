@@ -35,6 +35,7 @@ html {
 
 header {
   border: 6px solid black;
+  border-bottom-width: 0px;
   text-align: center;
   background-color: #fff421;
   text-transform: uppercase;
@@ -174,7 +175,10 @@ position: absolute;
 #about div {
   margin-bottom: 1em;
 }
- @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px){
+  header {
+      border-bottom-width: 4px;
+  }
   .grid-header {
     text-align: right;
   }
