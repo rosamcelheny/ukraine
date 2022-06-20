@@ -18,6 +18,9 @@ h2 {
 .lecture-header {
   background-color: white;
   border: 5px solid black;
+
+    border-bottom-width: 6px;
+border-top-width: 0px;
   text-align: center;
   padding: 1.5em;
 }
@@ -42,6 +45,7 @@ h2 {
   width: 100%;
   height: 47vw;
   border: 3px solid black;
+  border-bottom-width: 6px;
   height: 100%;
 
 }
@@ -68,6 +72,10 @@ header:hover * {
 header:active * {
   color: white;
 }
+.lecture-nav a:first-of-type .day {
+  border-top-width: 0px;
+}
+
 
 @media screen and (min-width: 1200px){
   .lecture {
@@ -76,13 +84,14 @@ header:active * {
   }
   .video, .description {
     width: 50%;
-    margin-top: 5em;
+    margin-top: calc(6em - 1px);
   }
   .lecture-header {
     position: absolute;
-    top: -5px;
+    top: 0px;
     left: -2px;
     right: -2px;
+    border-top-width: 3px;
   }
   .video iframe {
     height: 24vw;
